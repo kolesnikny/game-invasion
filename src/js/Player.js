@@ -1,4 +1,4 @@
-class Player {
+module.exports = class Player {
     constructor() {
         this.position = {
             x: 200,
@@ -14,13 +14,14 @@ class Player {
         this.height = 100;
     }
 
-    draw() {
-        paintContext.fillStyle = 'red';
-        paintContext.fillRect(
-            this.position.x,
-            this.position.y,
-            this.width,
-            this.height
-        );
+    render() {
+        return 'I DRAW IT';
+        // paintContext.fillStyle = 'red';
+        // paintContext.fillRect(
+        //     this.position.x,
+        //     this.position.y,
+        //     this.width,
+        //     this.height
+        //);
     }
-}
+};
